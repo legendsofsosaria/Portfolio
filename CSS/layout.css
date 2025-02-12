@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+
+body
+{
+    background-image: url("../assets/background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #EDE3E4;
+    font: 1.1vw 'Sedan SC', serif;
+}
+
