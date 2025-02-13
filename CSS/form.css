@@ -1,0 +1,45 @@
+.container
+{
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #E7DFE8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+h1
+{
+    text-align: center;
+    color: #333;
+}
+label
+{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+input, textarea
+{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+button
+{
+    width: 100%;
+    padding: 12px;
+    background-color: #5497A7;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+button:hover
+{
+    background-color: #78CAD2;
+}

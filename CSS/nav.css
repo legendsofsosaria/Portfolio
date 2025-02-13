@@ -7,7 +7,7 @@ nav ul
 
 nav, footer
 {
-    background-image: linear-gradient(to right, rgba(85, 67, 88, 0.3), rgba(146, 137, 138, 0.8), rgba(120, 110, 130, 1));
+    background-image: linear-gradient(to right, rgba(173, 216, 230, 0.3), rgba(135, 206, 250, 0.8), rgba(240, 248, 255, 1));
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -16,6 +16,7 @@ nav, footer
     border: 6px double rgba(120, 110, 130, 1);
     border-radius: 5px;
     padding: 2px;
+    margin: 20px 0px;
 }
 
 #footer-box
@@ -29,7 +30,7 @@ nav a, #footer-box a
     align-items: center;
     padding: 5px;
     text-decoration: none;
-    color: #3d3f6b;
+    color: #2a2a72;
 }
 
 nav a
@@ -42,10 +43,10 @@ nav a
     transform: scale(1,1) translateY(0px);
     transition: all 1.2s;
     font-size: 1.6vw;
-    color: #524941;
+    color: #1c1c5d;
 }
 
 footer > p
 {
-    color: #384e66;
+    color: #5f6c7b;
 }
