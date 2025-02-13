@@ -31,6 +31,8 @@ nav a, #footer-box a
     padding: 5px;
     text-decoration: none;
     color: #2a2a72;
+    transition: all 0.3s ease;
+    border-radius: 10px;
 }
 
 nav a
@@ -40,10 +42,12 @@ nav a
 
 .nav-links a:hover, #footer-box a:hover
 {
-    transform: scale(1,1) translateY(0px);
-    transition: all 1.2s;
-    font-size: 1.6vw;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 0 12px rgba(255, 255, 255, 0.5);
     color: #1c1c5d;
+    border: 1px solid #1c1c5d;
+    border-radius: 15px;
+    transition: all 0.3s ease;
 }
 
 footer > p

@@ -5,42 +5,155 @@
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="CSS/layout.css">
     <link rel="stylesheet" type="text/css" href="CSS/nav.css">
+    <link rel="stylesheet" type="text/css" href="CSS/multimedia.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body id="portfolio-body">
-    <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article>
-
-        </article>
-    </main>
-    <aside>
-
-    </aside>
-    <footer>
-        <div id="footer-box">
-            <a href="https://github.com/legendsofsosaria/">
-                <img src="assets/GitHubIcon.png" width="40" height="40" alt="GitHub">
-            </a>
-            <a href="https://github.com/legendsofsosaria/">GitHub</a>
-
-            <a href="https://www.legendsofsosaria.com/">
-                <img src="assets/LoSIcon.jpg" width="40" height="40" alt="Legends of Sosaria">
-            </a>
-            <a href="https://www.legendsofsosaria.com/">Legends of Sosaria</a>
+    <script src="multimedia.js" defer></script>
+<header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="video-slider-container">
+        <button class="scroll-left">&#8592;</button>
+        <div class="video-slider">
         </div>
+        <button class="scroll-right">&#8594;</button>
+    </div>
+    <article>
+        <h1>Scorpio - 2D Shooter Game Built From Scratch</h1>
         <p>
-            &copy; Elizabeth House 💻<br>
-            Last Updated: February 2025
+            The first video showcases my ability to design and program a game from scratch. This was a final project
+            for a game development course I took at George Brown College. I used SDL and C++ to create this game with a
+            partner. The game showcases the ability to implement game development skills such as collision detection and
+            a basic AI.
+            <br>
+            <br>
+            <strong>GitHub Link:</strong> You can check out the full code for this project on my
+            <a href="https://github.com/legendsofsosaria/Scorpio">GitHub repository</a>.
         </p>
-    </footer>
+        <h1>Custom Features Developed for Ultima Online</h1>
+        <p>
+            The remaining videos showcase some of the custom systems and features I have conceptualized, designed, and
+            programmed for Ultima Online, a classic multiplayer online role-playing game (MMORPG). The features
+            displayed demonstrate my skills in game development, including systems programming, UI design, and
+            creating engaging mechanics that enhance player interaction and immersion.
+            Tools Used: C#, CentrED# (for mapping), UOFiddler (software for editing client files), VitaNex API's and ServUO emulator.
+            Here are some highlights of the custom systems I developed:
+        </p>
+        <h2>Diving System:</h2>
+        <p>
+            I created a custom diving system that allows players to travel underwater. This system involved designing a terrain
+            for underwater travel, creating animations for water bubbles, and implementing a drowning mechanic that is prevented by
+            equipping a scuba mask.
+        </p>
+
+        <h2>Seed Machine:</h2>
+        <p>
+            I designed and implemented a seed machine that processes crops into seeds. The machine has a 2-minute processing time
+            per crop, and I implemented a timer to manage this. The custom UI updates every 2 minutes with a refreshed gump
+            (player interface), allowing players to track the remaining time for each crop.
+        </p>
+
+        <h2>Harvesting System:</h2>
+        <p>
+            This system allows players to plant and harvest crops in public fields or on their house plots. A unique challenge
+            was preventing crops from being left behind when players’ houses decayed. Additionally, crops in public fields can
+            be picked by other players after 8 days of inaction.
+        </p>
+
+        <h2>Necromancy Domination System:</h2>
+        <p>
+            I created a Necromancy Domination system, allowing players to control undead creatures. This system required client-side
+            edits for custom tooltips and enabling necromancy as an "active" skill. Additionally, the creature's behavior is affected
+            by the player's karma, and a positive karma player cannot control the pet until their karma goes negative.
+        </p>
+        <h2>Monsters Projectiles:</h2>
+        <p>
+            I created hundreds of custom monsters, including Earth Titans that throw projectiles. Giants (Fire, Frost, Storm, Stone)
+            each use a unique projectile with corresponding damage types, such as fireballs, ice chunks, lightning, and boulders.
+        </p>
+        <h2>Auto Blood Vial:</h2>
+        <p>
+            This showcases a quest item I programmed, designed by another staff member. The Auto Blood Vial draws blood from
+            a monster but causes it to explode afterward. I utilized built-in VitaNex effects for this functionality.
+        </p>
+        <h2>Sunless Citadel Dungeon:</h2>
+        <p>
+            In this project, I programmed all the monsters, quests, items, and systems for a custom dungeon built by one of our
+            developers. The dungeon includes intricate systems and unique mechanics, developed based on detailed notes from the
+            designer.
+        </p>
+        <h2>Archaeology Museum:</h2>
+        <p>
+            I designed and mapped this dungeon, also programming all the monsters, quests, items, and systems. One key feature is
+            the archaeology system, where players use tools to dig and uncover items. The dungeon features puzzles and traps,
+            including a complex lever puzzle and a boulder trap that drops from the ceiling.
+        </p>
+
+        <h2>Achievement System:</h2>
+        <p>
+            I designed and implemented this achievement system, which rewards players for completing tasks and keeps track of
+            their progress. Players can view their achievements, as well as others' achievements, using in-game commands. A
+            complex part of the system was the daily login reward, which resets after 24 hours of inactivity.
+        </p>
+    </article>
+    <article>
+        <h1>Web Development</h1>
+
+        <h2>Portfolio Website (This site)</h2>
+        <p>
+            This portfolio site was built from scratch using HTML, CSS, and JavaScript. It serves as both a showcase
+            of my work and a demonstration of my web development skills. The site is fully responsive and was designed
+            to provide a seamless user experience across devices. I also created a fully-functional web form on the contact
+            page that will submit an email to contact me using JavaScript and EmailJS.
+            <br>
+            <br>
+            <strong>GitHub Link:</strong> You can check out the full code for this project on my
+            <a href="https://github.com/legendsofsosaria/Portfolio">GitHub repository</a>.
+        </p>
+        <div class="image-gallery">
+            <div class="image-item">
+                <img src="assets/ArtPastry.png" alt="Art & Pastry Website" />
+            </div>
+        </div>
+        <h2>Web Development Class Final Project: <a href="https://legendsofsosaria.github.io/Web-Design/">Art & Pastry Website</a></h2>
+        <p>
+            For my final project in my web development class, I built a portfolio site for a bakery.
+            This project was focused on implementing modern web technologies like HTML, CSS, and JavaScript.
+            I implemented a responsive layout to make the site functional and user-friendly. I also implemented some
+            cool features with JavaScript such as a slideshow, modal boxes from my gallery grid, and an order form.
+            Unlike the form on this portfolio website, the form on this site just redirects you to a page saying it
+            is submitted as the website was for a business that is no longer operational.
+            <br>
+            <br>
+            <strong>GitHub Link:</strong> You can check out the full code for this project on my
+            <a href="https://github.com/legendsofsosaria/Web-Design">GitHub repository</a>.
+        </p>
+    </article>
+</main>
+<footer>
+    <div id="footer-box">
+        <a href="https://github.com/legendsofsosaria/">
+            <img src="assets/GitHubIcon.png" width="40" height="40" alt="GitHub">
+        </a>
+        <a href="https://github.com/legendsofsosaria/">GitHub</a>
+        <a href="https://www.legendsofsosaria.com/">
+            <img src="assets/LoSIcon.jpg" width="40" height="40" alt="Legends of Sosaria">
+        </a>
+        <a href="https://www.legendsofsosaria.com/">Legends of Sosaria</a>
+    </div>
+    <p>
+        &copy; Elizabeth House 💻<br>
+        Last Updated: February 2025
+    </p>
+</footer>
 </body>
 </html>

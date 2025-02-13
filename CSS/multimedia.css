@@ -1,0 +1,107 @@
+/* Basic layout and styling */
+.video-slider-container
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.video-slider
+{
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.video-item
+{
+    flex: 0 0 320px;
+    margin: 10px;
+    position: relative;
+}
+
+.caption
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    transform: translateY(-100%); /* Hidden at the top of the video */
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.video-item:hover .caption
+{
+    transform: translateY(0);
+}
+
+.caption p
+{
+    margin: 0;
+    max-height: 5em;
+    overflow: hidden;
+}
+
+.video-item video
+{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-item:hover video
+{
+    cursor: pointer;
+}
+
+/* Styling for the navigation buttons */
+.scroll-left, .scroll-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.scroll-left
+{
+    left: 10px;
+}
+
+.scroll-right
+{
+    right: 10px;
+}
+
+/* Media queries */
+@media (max-width: 768px)
+{
+    .video-item
+    {
+        flex: 0 0 100%; /* Full width for smaller screens */
+    }
+}
+
+@media (min-width: 769px)
+{
+    .video-item
+    {
+        flex: 0 0 320px; /* Set width for larger screens */
+    }
+}
+
+@media (min-width: 1024px)
+{
+    .video-item
+    {
+        flex: 0 0 calc(33.33% - 20px); /* Three videos with margin */
+    }
+}
