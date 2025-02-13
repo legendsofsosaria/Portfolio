@@ -3,7 +3,7 @@
     width: 80%;
     max-width: 600px;
     margin: 20px auto;
-    background-color: #E7DFE8;
+    background-color: #E8CBEB;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -21,25 +21,26 @@ label
 }
 input, textarea
 {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
 }
-button
+.button
 {
-    width: 100%;
+    margin-left: 35px;
+    width: 40%;
     padding: 12px;
-    background-color: #5497A7;
+    background-color: #97B8D9;
     border: none;
     color: white;
     font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
 }
-button:hover
+.button:hover
 {
     background-color: #78CAD2;
 }
