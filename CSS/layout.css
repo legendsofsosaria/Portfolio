@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
 
 body
 {
@@ -121,20 +122,59 @@ h3
     font-size: 1.3rem;
 }
 
-.image-gallery {
+.image-gallery
+{
     display: flex;
-    justify-content: center; /* Centers the image gallery container */
+    justify-content: center;
 }
 
-.image-item {
-    display: inline-block; /* Makes the div behave like an inline element for centering */
-    text-align: center; /* Centers the text inside the image item */
+.image-item
+{
+    display: inline-block;
+    text-align: center;
 }
 
-.image-item img {
-    max-width: 100%; /* Ensures the image is responsive */
-    height: auto; /* Maintains aspect ratio */
-    margin: 0 auto; /* Centers the image */
+.image-item img
+{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+aside#counter-container
+{
+    background-color: rgba(205, 134, 63, .40);
+    max-width: 30%;
+    margin: 0 auto;
+    border: 5px double rgba(95, 217, 207, .7);
+    border-radius: 25px;
+    color: black;
+    font-family: 'Jacques Francois Shadow', serif;
+}
+
+.counter-content
+{
+    text-align: center;
+}
+
+.website-counter
+{
+    display: block;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+
+#counter-text
+{
+    font-size: 1.7rem;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+#counter-text, .website-counter
+{
+    line-height: 1.0;
 }
 
 @media screen and (max-width: 768px)

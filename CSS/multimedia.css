@@ -58,7 +58,8 @@
 }
 
 /* Styling for the navigation buttons */
-.scroll-left, .scroll-right {
+.scroll-left, .scroll-right
+{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -80,6 +81,34 @@
 {
     right: 10px;
 }
+
+/* Center child elements */
+body,
+.website-counter
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body
+{
+    height: 100vh;
+}
+
+/* Styles for reset button */
+#reset
+{
+    margin-top: 20px;
+    background-color: #008cba;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px 20px;
+    color: white;
+    border: 0;
+}
+
 
 /* Media queries */
 @media (max-width: 768px)
