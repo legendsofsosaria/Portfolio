@@ -140,42 +140,6 @@ h3
     margin: 0 auto;
 }
 
-aside#counter-container
-{
-    background-color: rgba(205, 134, 63, .40);
-    max-width: 30%;
-    margin: 0 auto;
-    border: 5px double rgba(95, 217, 207, .7);
-    border-radius: 25px;
-    color: black;
-    font-family: 'Sedan SC', serif;
-}
-
-.counter-content
-{
-    text-align: center;
-}
-
-.website-counter
-{
-    display: block;
-    font-size: 2.5rem;
-    padding-bottom: 10px;
-    margin: 0 auto;
-}
-
-#counter-text
-{
-    font-size: 1.7rem;
-    padding-top: 10px;
-    margin: 0 auto;
-}
-
-#counter-text, .website-counter
-{
-    line-height: 1.0;
-}
-
 @media screen and (max-width: 768px)
 {
     body
