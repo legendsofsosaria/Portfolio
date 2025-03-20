@@ -10,6 +10,12 @@ body
     height: 100vh;
 }
 
+#portfolio-body, main
+{
+    overflow: visible;
+    height: auto;
+}
+
 #index-body, #resume-body, #about-body, #portfolio-body
 {
     background-size: cover;
@@ -139,6 +145,7 @@ h3
     height: auto;
     margin: 0 auto;
 }
+
 
 @media screen and (max-width: 768px)
 {
