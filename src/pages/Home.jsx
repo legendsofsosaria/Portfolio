@@ -5,7 +5,7 @@ function Home()
             <article>
                 <h1>About Me</h1>
                 <section>
-                    <img className="profile-img"/>
+                    <img className="profile-img" src={import.meta.env.BASE_URL + "images/profile.jpg"} alt="Elizabeth House"/>
                     <br></br>
                     Hi, I’m Elizabeth House, a Computer Programming & Analysis student at
                     George Brown Polytechnic and a Computer Science student at Thompson Rivers

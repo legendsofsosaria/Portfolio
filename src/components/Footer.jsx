@@ -3,12 +3,12 @@ function Footer() {
         <footer className = "footer">
             <div id="footer-box">
                 <a href="https://github.com/legendsofsosaria/">
-                    <img className="github-icon" alt="GitHub"/>
+                    <img className="footer-icon" src={import.meta.env.BASE_URL + "images/githubicon.png"} alt="GitHub"/>
                 </a>
                 <a href="https://github.com/legendsofsosaria/">GitHub</a>
 
                 <a href="https://www.legendsofsosaria.com/">
-                    <img className="los-icon" alt="Legends of Sosaria"/>
+                    <img className="footer-icon" src={import.meta.env.BASE_URL + "images/losicon.jpg"} alt="Legends of Sosaria"/>
                 </a>
                 <a href="https://www.legendsofsosaria.com/">Legends of Sosaria</a>
             </div>

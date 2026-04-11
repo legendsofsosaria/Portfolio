@@ -1,25 +1,8 @@
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import transcripts from "../data/educationData.js";
 
 function Education() {
-    const transcripts = [
-        {
-            src: "/transcripts/gb1.png",
-            label: "George Brown Polytechnic - Transcript Page 1"
-        },
-        {
-            src: "/transcripts/gb2.png",
-            label: "George Brown Polytechnic - Transcript Page 2"
-        },
-        {
-            src: "/transcripts/tru1.png",
-            label: "Thompson Rivers University - Transcript Page 1"
-        },
-        {
-            src: "/transcripts/deanslist.png",
-            label: "George Brown Polytechnic - Dean's List Certificate"
-        }
-    ];
 
     const [activeIndex, setActiveIndex] = useState(0);
 
@@ -41,9 +24,9 @@ function Education() {
             <div>
                 <h2>Supporting Documents</h2>
                 <p>Selected excerpts from academic records.</p>
-                <div className="transcript-gallery">
+                <div className="card-gallery">
                     {transcripts.map((item, i) => (
-                        <div key={i} className="transcript-item">
+                        <div key={i} className="model-image">
                             <img
                                 src={item.src}
                                 onClick={() => setActiveIndex(i)}
@@ -93,7 +76,7 @@ function Education() {
                                         key={i}
                                         className={`carousel-item ${i === activeIndex ? "active" : ""}`}
                                     >
-                                        <div className="transcript-item">
+                                        <div className="model-image">
                                             <p>{item.label}</p>
                                             <img
                                                 src={item.src}
