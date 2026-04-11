@@ -40,23 +40,23 @@ body {
 }
 /* Page Backgrounds */
 .route- {
-  background-image: url("./images/background2.jpg");
+  background-image: url("/images/background2.jpg");
 }
 
 .route-resume {
-  background-image: url("./images/background1.jpg");
+  background-image: url("/images/background1.jpg");
 }
 
 .route-contact {
-  background-image: url("./images/background3.jpg");
+  background-image: url("/images/background3.jpg");
 }
 
 .route-projects {
-    background-image: url("./images/background4.jpg");
+    background-image: url("/images/background4.jpg");
 }
 
 .route-education {
-  background-image: url("./images/background6.jpg");
+  background-image: url("/images/background6.jpg");
 }
 /* Aside */
 aside
