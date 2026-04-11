@@ -4,19 +4,19 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Education() {
     const transcripts = [
         {
-            src: "./transcripts/gb1.png",
+            src: "/transcripts/gb1.png",
             label: "George Brown Polytechnic - Transcript Page 1"
         },
         {
-            src: "./transcripts/gb2.png",
+            src: "/transcripts/gb2.png",
             label: "George Brown Polytechnic - Transcript Page 2"
         },
         {
-            src: "./transcripts/tru1.png",
+            src: "/transcripts/tru1.png",
             label: "Thompson Rivers University - Transcript Page 1"
         },
         {
-            src: "./transcripts/deanslist.png",
+            src: "/transcripts/deanslist.png",
             label: "George Brown Polytechnic - Dean's List Certificate"
         }
     ];
