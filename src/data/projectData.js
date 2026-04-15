@@ -16,6 +16,7 @@ const projects = [
             img("/images/ticketapp/ticket6.png"),
         ],
         featured: true,
+        github: "https://github.com/legendsofsosaria/COMP2139-ASSIGN2-GROUP36",
     },
     {
         id: 2,
@@ -55,6 +56,7 @@ const projects = [
             img("/images/scorpio/scorpio2.png"),
         ],
         featured: false,
+        github: "https://github.com/legendsofsosaria/Scorpio",
     },
     {
         id: 5,

@@ -97,6 +97,21 @@ aside a:active
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.github-links {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 12px;
+  background-color: #2d2d2d;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.github-links:hover {
+  background-color: #444;
+}
+
 /* Headings */
 .heading
 {
@@ -157,6 +172,12 @@ h1
 h3
 {
   font-size: 1.3rem;
+}
+
+h4
+{
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /* Resume-specific styles */

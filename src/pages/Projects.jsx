@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Modal } from "bootstrap";
 import projects from "../data/projectData.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -7,6 +8,10 @@ export default function Projects() {
 
     const openModal = (project) => {
         setSelectedProject(project);
+
+        const modalElement = document.getElementById("projectModal");
+        const modalInstance = Modal.getOrCreateInstance(modalElement);
+        modalInstance.show();
     };
 
     return (
@@ -21,19 +26,28 @@ export default function Projects() {
                                 key={project.id}
                                 className="card-gallery cursor-pointer"
                                 onClick={() => openModal(project)}
-                                data-bs-toggle="modal"
-                                data-bs-target="#projectModal"
                             >
                                 <h2 className="mt-2 text-lg font-semibold">
                                     {project.title}
                                 </h2>
-                                <p className="text-sm text-muted">{project.tags.join(", ")}</p>
+                                <p className="text-sm mt-2">{project.images.length} images</p>
                                 <img
                                     src={project.images[0]}
                                     alt={project.title}
                                     className="w-full h-60 object-cover rounded-lg"
                                 />
-                                <p className="text-sm mt-2">{project.images.length} images</p>
+                                <h4 className="text-sm text-muted">{"Tags: " + project.tags.join(", ")}</h4>
+                                {project.github && (
+                                    <a
+                                        className="github-links"
+                                        href={project.github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        onClick={(e) => e.stopPropagation()}
+                                    >
+                                        GitHub Link
+                                    </a>
+                                )}
                             </div>
                         ))}
                     </div>
