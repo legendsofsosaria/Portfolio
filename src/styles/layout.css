@@ -263,7 +263,8 @@ h3
 }
 
 .carousel-inner {
-  height: 70vh;
+  height: 80vh;
+  width: auto;
 }
 
 .carousel-item {
@@ -272,7 +273,7 @@ h3
 
 .carousel-fixed {
   width: 100%;
-  height: 500px;
+  height: 630px;
   display: flex;
   align-items: center;
   justify-content: center;

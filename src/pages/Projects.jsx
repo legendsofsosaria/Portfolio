@@ -9,7 +9,6 @@ export default function Projects() {
         setSelectedProject(project);
     };
 
-    // TODO: look at the carousel glitching after switching between projects - likely a state issue with the carousel not resetting to the first image when a new project is selected. May need to force reset the carousel state on project change.
     return (
         <div className="page projects-page">
             <article>
