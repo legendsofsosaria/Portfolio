@@ -58,7 +58,11 @@ export default function Projects() {
                             <div className="modal-body">
 
                                 {/* CAROUSEL */}
-                                <div id="projectCarousel" className="carousel slide">
+                                <div
+                                    key={selectedProject?.id}
+                                    id="projectCarousel"
+                                    className="carousel slide"
+                                >
 
                                     <div className="carousel-indicators">
                                         {selectedProject?.images.map((_, i) => (
