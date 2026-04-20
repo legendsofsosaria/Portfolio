@@ -31,6 +31,7 @@ const projects = [
             img("/images/focusfae/focusfae4.png"),
         ],
         featured: false,
+        github: "https://github.com/legendsofsosaria/FocusFae",
     },
     {
         id: 3,
@@ -82,6 +83,15 @@ const projects = [
         images: [img("/images/kitchensync/kitchen1.png")],
         featured: false,
     },
+    {
+        id: 7,
+        title: "Bakery Website",
+        description:
+        "Responsive website for a bakery, showcasing products, complete with an order form and contact information.",
+        tags: ["HTML", "CSS", "JavaScript"],
+        images: [img ("/images/bakery/bakery1.png"), img ("/images/bakery/bakery2.png"), img("/images/bakery/bakery2.png")],
+        github: "https://github.com/legendsofsosaria/Web-Design"
+    }
 ];
 
 export default projects;
