@@ -89,7 +89,7 @@ const projects = [
         description:
         "Responsive website for a bakery, showcasing products, complete with an order form and contact information.",
         tags: ["HTML", "CSS", "JavaScript"],
-        images: [img ("/images/bakery/bakery1.png"), img ("/images/bakery/bakery2.png"), img("/images/bakery/bakery2.png")],
+        images: [img ("/images/bakery/bakery1.png"), img ("/images/bakery/bakery2.png"), img("/images/bakery/bakery3.png")],
         github: "https://github.com/legendsofsosaria/Web-Design"
     }
 ];

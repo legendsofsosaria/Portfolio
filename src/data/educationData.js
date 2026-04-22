@@ -3,6 +3,14 @@ import { img } from "../util.js";
 /* Education Data, currently only transcripts available */
 const transcripts = [
     {
+        src: img("/transcripts/Recommendation1.png"),
+        label: "George Brown Polytechnic - Letter of Recommendation"
+    },
+    {
+        src: img("/transcripts/deanslist.png"),
+        label: "George Brown Polytechnic - Dean's List Certificate"
+    },
+    {
         src: img("/transcripts/gb1.png"),
         label: "George Brown Polytechnic - Transcript Page 1"
     },
@@ -13,10 +21,6 @@ const transcripts = [
     {
         src: img("/transcripts/tru1.png"),
         label: "Thompson Rivers University - Transcript Page 1"
-    },
-    {
-        src: img("/transcripts/deanslist.png"),
-        label: "George Brown Polytechnic - Dean's List Certificate"
     }
 ];
 
